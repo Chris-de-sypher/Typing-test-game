@@ -1,0 +1,161 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background-color: #fff;
+  width: 350px;
+  min-width: 250px;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: max-content;
+  padding-bottom: 10px;
+}
+
+.tm {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  padding: 20px 10px;
+  font-family: sans-serif;
+  line-height: 1.4em;
+  color: #444;
+}
+
+.quote-display{
+  width: 320px;
+  margin: 10px auto;
+  /* line-height: 1.4em; */
+  border: 2px solid green;
+  border-radius: 6px;
+  /* font-family: sans-serif; */
+  /* font-size: 0.8em; */
+  padding: 10px;
+  /* text-align: justify; */
+}
+.quotes{
+  text-align: justify;
+}
+
+.user-input {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 320px;
+  margin: 30px auto;
+  line-height: 1.4em;
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+
+#typing{
+    width: inherit;
+    height: 13vh;
+    border-radius: 6px;
+    border: 2px solid #333;
+    padding:10px;
+    resize: none;
+}
+
+#typing::-webkit-scrollbar{
+    display:none;
+}
+
+.btns{
+    display: flex;
+    gap: 0.2em;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+.btns button{
+    padding: 10px;
+    background: forestgreen;
+    color: #fff;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.success{
+    color: green;
+}
+
+.fail{
+    color: red;
+}
+
+.asc{
+    margin: 50px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: nosifer;
+    font-size: 0.6em;
+    font-weight: 500;
+}
+
+.result-output h3{
+    text-align: center;
+    margin: 10px 0;
+    color: #444;
+    text-transform: capitalize;
+    text-rendering: geometricPrecision;
+    /* letter-spacing: 0.3em; */
+      transition: all .25s ease;
+    -webkit-text-stroke: 0.1px rgba(246, 186, 74, 1);
+  animation: drip 2.5s infinite alternate;
+  font-family: nosifer;
+  font-size: 2em;
+}
+
+
+@keyframes drip {
+    to {
+        text-shadow:
+       4px 4px 1px #300000,
+       4px 6px 1px #400000,
+       4px 8px 1px #500000,
+       4px 10px 1px #600000,
+       4px 12px 1px #700000,
+       4px 14px 1px #800000,
+       4px 16px 1px #900000,
+       4px 18px 1px #A00000,
+       4px 20px 1px #B00000,
+       4px 22px 1px #C00000,
+       4px 24px 1px #D00000,
+       4px 26px 1px #E00000,
+       4px 28px 1px #F00000,
+       4px 30px 1px #FA0000,
+       4px 32px 1px #FB0000,
+       4px 34px 1px #FC0000,
+       4px 36px 1px #FD0000,
+       4px 38px 1px #FE0000,
+       4px 39px 1px #FF0000;
+    }
+}

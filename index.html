@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://fonts.googleapis.com/css?family=Creepster|Source+Sans+Pro|Nosifer" rel="stylesheet">
+</head>
+<body>
+
+   <div class="box">
+    <div class="tm">
+    <span align="right">Time:<span id="time"></span></span>
+    <span align="right">Mistakes:<span id="mis"></span></span>
+    </div>
+    <div class="quote-display" onmousedown="return false"></div>
+    <div class="user-input">
+        <textarea id="typing"></textarea>
+    </div>
+    <div class="btns">
+        <button type="button" title="btn1" onclick="start()">Start test</button>
+        <button type="button" title="btn2" onclick="displayResult()">Stop test</button>
+    </div>
+    <div class="result-output">
+        <h3>
+            Final result
+        </h3>
+        <div class="asc">
+        <p class="acc">Accuracy:<span class="result"></span></p>
+        <p class="sp">Speed: <span class="speed"></span></p>
+        </div>
+    </div>
+   </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
